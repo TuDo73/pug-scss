@@ -1,0 +1,30 @@
+include ../mixins/all.pug
+
+block vars
+  - title = 'LaslesVPN';
+
+doctype html
+html.no-js(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title= title
+    meta(name='description', content=description ? description : 'With ZipCo, you get to receive recent updates on gas and electricity providers and ascertain their rates and prices for free. Compare Energy now!')
+    meta(name='keywords', content=keyword ? keyword : '')
+    meta(name='robots', content='index, follow')
+    meta(name='author', content='')
+    link(rel='icon' type='image/png' href='https://zip-co-media.imgix.net/zip-co-v2/icons/favicon.svg')
+    -
+      const production = self.htmlWebpackPlugin.options.production
+    if production
+      style.
+        !{self.htmlWebpackPlugin.options.inline}
+    
+  body
+    //-[if lte IE 9]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]
+    noscript 
+      p JavaScript is off. Please enable to view full site.
+    include ../global/header.pug
+    block container
+    include ../global/footer.pug

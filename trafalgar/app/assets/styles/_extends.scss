@@ -1,0 +1,12 @@
+%link {
+  color: $color-primary;
+  text-decoration: none;
+  cursor: pointer;
+  transition: $transition;
+}
+
+%link-hover {
+  &:hover {
+    color: $color-secondary;
+  }
+}

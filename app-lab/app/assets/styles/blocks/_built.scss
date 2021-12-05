@@ -1,0 +1,27 @@
+.built {
+  .built-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .built-list {
+    --col: 2;
+    --space: 107px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 calc(-1 * (var(--space) / 2));
+
+    .built-item {
+      width: calc(100% / var(--col) - var(--space));
+      margin: 30px calc(var(--space) / 2);
+    }
+
+    .built-item-img {
+      margin-bottom: 35px;
+    }
+  }
+
+  .built-img {
+    flex-shrink: 0;
+  }
+}

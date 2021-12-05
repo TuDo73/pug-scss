@@ -1,0 +1,61 @@
+.jackpot {
+  .jackpot-wrap {
+    padding: 40px 0;
+  }
+
+  .jackpot-heading {
+    display: flex;
+    align-items: center;
+
+    h2 {
+      border-right: 1px solid $gray-line;
+      padding-right: 70px;
+      // max-width: 431px;
+    }
+
+    p {
+      padding-left: 48px;
+      // max-width: 404px;
+    }
+  }
+
+  .jackpot-list {
+    display: flex;
+    margin-top: 110px;
+
+    .jackpot-item {
+      display: flex;
+      flex-direction: column;
+      &:first-child {
+        h4 {
+          color: $red;
+        }
+      }
+      &:nth-child(2) {
+        h4 {
+          color: $blue;
+        }
+      }
+      &:last-child {
+        h4 {
+          color: $green;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 125px;
+      }
+
+      .jackpot-img {
+        margin-bottom: 36px;
+      }
+
+      .jackpot-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+  }
+}

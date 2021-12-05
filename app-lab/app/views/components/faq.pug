@@ -1,0 +1,36 @@
+include ../mixins/all.pug
+
+-
+  attr = {};
+  if (production) {
+    attr['data-core-script'] = 'scripts/widgets/widget_faq.min.js';
+  }
+
+section.faq&attributes(attr)
+  .container 
+    .faq-wrap 
+      .faq-heading 
+        h3 Frequently asked questions
+        p The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.
+      .faq-content 
+        ul.faq-list 
+          li(class="faq-item") 
+            h4.faq-item-heading
+              | How to contact with riders emergency?
+            p.faq-item-body 
+              | Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+          li(class="faq-item") 
+            h4.faq-item-heading
+              | How to contact with riders emergency?
+            p.faq-item-body 
+              | Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+          li(class="faq-item") 
+            h4.faq-item-heading
+              | How to contact with riders emergency?
+            p.faq-item-body 
+              | Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+          li(class="faq-item") 
+            h4.faq-item-heading
+              | How to contact with riders emergency?
+            p.faq-item-body 
+              | Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.

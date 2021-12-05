@@ -1,0 +1,23 @@
+%container {
+  width: 100%;
+  max-width: $width-page;
+  margin: 0 auto;
+  // padding: 0 35px;
+
+  // @include max-xxl {
+  //   max-width: $width-page-xxl;
+  // }
+  // @include max-xl {
+  //   max-width: $width-page-xl;
+  // }
+  // @include max-md {
+  //   max-width: $width-page-md;
+  // }
+  // @include max-sm {
+  //   max-width: $width-page-sm;
+  // }
+}
+
+.container {
+  @extend %container;
+}

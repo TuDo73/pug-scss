@@ -1,0 +1,121 @@
+/* Path source
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$urlImg: "../images";
+$urlFont: "../fonts";
+
+/* Colors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$color-primary: #242f51;
+$color-secondary: #2500f9;
+$text-body: #616368;
+$white: white;
+$black: black;
+$orange: #feaa25;
+$gray: #e2eaed;
+$gray-line: #b9b9b8;
+$gray-text-card: #999ca5;
+$gray-accordion: #f5f7fa;
+$gray-slide: #eff3f8;
+$gray-card: #f4f7f9;
+$red: #f55767;
+$blue: #2563ff;
+$blue-footer: #09142e;
+$green: #40975f;
+
+/* Gradient
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$gradient-1: linear-gradient(
+  to bottom,
+  rgba(120, 149, 254, 1) 0%,
+  rgba(176, 191, 254, 1) 100%
+);
+
+/* Fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$font-roboto: "Roboto", sans-serif;
+$font-icon: "icon";
+$font-primary: $font-roboto;
+$font-heading: $font-roboto;
+
+/* Width page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+// Base on design
+$gutter: 15px;
+
+$width-page: 1170px;
+$width-page-xxl: 1232px;
+$width-page-xl: 896px;
+$width-page-md: 680px;
+$width-page-sm: 304px;
+
+/* Breakpoint
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$break-xxl: 1680px;
+$break-xl: 1440px;
+$break-l2: 1280px;
+$break-l1: 1168px;
+$break-md: 1024px;
+$break-m: 992px; // device
+$break-sm: 768px; // mobile
+$break-s: 640px;
+$break-x: 480px;
+$break-xs: 375px;
+
+$layout-breakpoints: (
+  // Base on project
+  xxl: 1680px,
+  xl: 1440px,
+  md: 1024px,
+  sm: 768px,
+  xs: 375px
+) !default;
+
+/* Font-size
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$font-size-1: 14px;
+$font-size-2: 16px;
+$font-size-3: 20px;
+$font-size-default: $font-size-2 !default;
+
+$size-by-breakpoints: (
+  // Base on project
+  xxl: $font-size-3,
+  xl: $font-size-2,
+  md: $font-size-2,
+  sm: $font-size-1,
+  xs: $font-size-1
+) !default;
+
+/* Line-height
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$line-height-1: 1.625; // Text
+$line-height-2: 1.25; // Heading
+$line-height-default: $line-height-1;
+
+/* Font-weight
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-default: $font-weight-regular;
+
+/* Transition
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$cubic1: cubic-bezier(0.19, 1, 0.22, 1);
+$cubic2: cubic-bezier(0.48, 0.48, 0.57, 0.57);
+$cubic3: cubic-bezier(0.215, 0.61, 0.355, 1);
+$cubic4: cubic-bezier(0.4, 0, 0.2, 1);
+
+$transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+$transition-secondary: all 0.3s ease;
+
+/*
+h1: 60 1.25
+h2 40 1.25
+h3: 36
+h4 20 58=2.9
+hero: 18 1.55
+body: 16 26=1.625
+
+*/

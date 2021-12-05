@@ -1,0 +1,62 @@
+include ../mixins/all.pug
+
+-
+  attr = {};
+  if (production) {
+    attr['data-core-script'] = 'scripts/widgets/widget_footer.min.js';
+  }
+
+footer.footer&attributes(attr)
+  .container
+    .footer-wrap 
+      .footer-top 
+        .footer-small-col
+          .footer-col
+            h4 About us 
+            ul.footer-list
+              li 
+                a(href="#") Who we are
+              li 
+                a(href="#") Who we are
+              li 
+                a(href="#") Who we are
+              li 
+                a(href="#") Who we are
+              li 
+                a(href="#") Who we are
+          .footer-col
+            h4 About us 
+            ul.footer-list
+              li 
+                a(href="#") Who we are
+              li 
+                a(href="#") Who we are
+              li 
+                a(href="#") Who we are
+              li 
+                a(href="#") Who we are
+              li 
+                a(href="#") Who we are
+          .footer-col
+            h4 About us 
+            ul.footer-list
+              li 
+                a(href="#") Who we are
+              li 
+                a(href="#") Who we are
+              li 
+                a(href="#") Who we are
+              li 
+                a(href="#") Who we are
+              li 
+                a(href="#") Who we are
+        .footer-large-col 
+          .top 
+            h4 experience app on mobile
+          .bottom
+            h4 Follow Us
+      .footer-bottom
+       | Copyright © 
+       span.copyright 2019 
+       span.brand themeies.com. 
+       |  All rights reserved.

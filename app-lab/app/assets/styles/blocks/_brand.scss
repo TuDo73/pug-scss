@@ -1,0 +1,25 @@
+.brands {
+  padding: 115px 0;
+
+  .brands-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brands-caption {
+    color: $color-primary;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .brands-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .brand-item {
+    flex: 1;
+  }
+}

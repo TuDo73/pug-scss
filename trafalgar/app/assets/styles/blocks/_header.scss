@@ -1,0 +1,18 @@
+.header {
+  .header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 0;
+  }
+
+  .header-nav {
+    font-size: 18px;
+    color: $text-header;
+    display: flex;
+
+    .nav-item:not(:first-child) {
+      margin-left: 40px;
+    }
+  }
+}

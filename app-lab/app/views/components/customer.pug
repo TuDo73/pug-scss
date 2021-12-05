@@ -1,0 +1,53 @@
+include ../mixins/all.pug
+
+
+-
+  attr = {};
+  if (production) {
+    attr['data-core-script'] = 'scripts/widgets/widget_slider.min.js';
+  }
+
+section.customer&attributes(attr)
+  .container 
+    .customer-wrap
+      .customer-image 
+        img(data-core-lazy data-src=require('../../assets/images/People images.png') src="", alt="people")
+      .customer-content
+        .customer-heading
+          h3 Meet Client Satisfaction by using product 
+          p The rise of mobile devicesi transforms the way we consume. elevant channels such as Facebook.
+        .customer-slider-wrap 
+          .customer-controls 
+            div(class="control-btn icon-arrow-left")
+            div(class="control-btn icon-arrow-right")
+          .customer-slider 
+            .slider-item 
+              img(data-core-lazy data-src=require('../../assets/images/star.png') src="", alt="star")
+              h4 User friendly & Customizable
+              p Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+              .user
+                .user-ava 
+                  img(data-core-lazy data-src=require('../../assets/images/avatar.png') src="", alt="avatar")
+                .user-info
+                  span.user-name Zoltan Nemeth
+                  span.user-detail CEO of Pixler Lab
+            .slider-item 
+              img(data-core-lazy data-src=require('../../assets/images/star.png') src="", alt="star")
+              h4 User friendly & Customizable
+              p Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+              .user
+                .user-ava 
+                  img(data-core-lazy data-src=require('../../assets/images/avatar.png') src="", alt="avatar")
+                .user-info
+                  span.user-name Zoltan Nemeth
+                  span.user-detail CEO of Pixler Lab
+            .slider-item 
+              img(data-core-lazy data-src=require('../../assets/images/star.png') src="", alt="star")
+              h4 User friendly & Customizable
+              p Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+              .user
+                .user-ava 
+                  img(data-core-lazy data-src=require('../../assets/images/avatar.png') src="", alt="avatar")
+                .user-info
+                  span.user-name Zoltan Nemeth
+                  span.user-detail CEO of Pixler Lab

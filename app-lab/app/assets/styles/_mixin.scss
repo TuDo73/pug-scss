@@ -1,0 +1,240 @@
+$dot: 1px;
+$variable-prefix: pj- !default;
+
+// Make font-size breakpoints
+@function breakpoint-max($name, $breakpoints: $layout-breakpoints) {
+  $max: map-get($breakpoints, $name);
+  @return if($max and $max > 0, $max, null);
+}
+@mixin media-breakpoint-down($name, $breakpoints: $layout-breakpoints) {
+  $max: breakpoint-max($name, $breakpoints);
+  @if $max {
+    @media (max-width: #{$max - $dot}) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+@mixin make-font-size-define($base: $font-size-default) {
+  --pj-body: #{$base};
+  --pj-hero-text: #{1.5 * $base};
+  --pj-h1: #{2.5 * $base};
+  --pj-h2: #{1.75 * $base};
+  --pj-h4: #{1.125 * $base};
+}
+
+// Font-size global
+@mixin font-size($size-font) {
+  font-size: $size-font;
+  letter-spacing: calc(#{$size-font} / 100);
+}
+
+// ========= MIN ====================
+@mixin min-xs {
+  @media (min-width: #{$break-xs}) {
+    @content;
+  }
+}
+@mixin min-x {
+  @media (min-width: #{$break-x}) {
+    @content;
+  }
+}
+@mixin min-s {
+  @media (min-width: #{$break-s}) {
+    @content;
+  }
+}
+@mixin min-sm {
+  @media (min-width: #{$break-sm}) {
+    @content;
+  }
+}
+@mixin min-m {
+  @media (min-width: #{$break-m}) {
+    @content;
+  }
+}
+@mixin min-md {
+  @media (min-width: #{$break-md}) {
+    @content;
+  }
+}
+@mixin min-l1 {
+  @media (min-width: #{$break-l1}) {
+    @content;
+  }
+}
+@mixin min-l2 {
+  @media (min-width: #{$break-l2}) {
+    @content;
+  }
+}
+@mixin min-xl {
+  @media (min-width: #{$break-xl}) {
+    @content;
+  }
+}
+@mixin min-xxl {
+  @media (min-width: #{$break-xxl}) {
+    @content;
+  }
+}
+
+// ========= MAX ====================
+@mixin max-xxl {
+  @media (max-width: #{$break-xxl - $dot}) {
+    @content;
+  }
+}
+@mixin max-xl {
+  @media (max-width: #{$break-xl - $dot}) {
+    @content;
+  }
+}
+@mixin max-l2 {
+  @media (max-width: #{$break-l2 - $dot}) {
+    @content;
+  }
+}
+@mixin max-l1 {
+  @media (max-width: #{$break-l1 - $dot}) {
+    @content;
+  }
+}
+@mixin max-md {
+  @media (max-width: #{$break-md - $dot}) {
+    @content;
+  }
+}
+@mixin max-m {
+  @media (max-width: #{$break-m - $dot}) {
+    @content;
+  }
+}
+@mixin max-sm {
+  @media (max-width: #{$break-sm - $dot}) {
+    @content;
+  }
+}
+@mixin max-s {
+  @media (max-width: #{$break-s - $dot}) {
+    @content;
+  }
+}
+@mixin max-x {
+  @media (max-width: #{$break-x - $dot}) {
+    @content;
+  }
+}
+@mixin max-xs {
+  @media (max-width: #{$break-xs - $dot}) {
+    @content;
+  }
+}
+
+// ========= CUSTOM ====================
+@mixin min-custom-breakpoint($custom-breakpoint) {
+  @media (min-width: #{$custom-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin max-custom-breakpoint($custom-breakpoint) {
+  @media (max-width: #{$custom-breakpoint - $dot}) {
+    @content;
+  }
+}
+
+// String Replace
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace +
+      str-replace(
+        str-slice($string, $index + str-length($search)),
+        $search,
+        $replace
+      );
+  }
+
+  @return $string;
+}
+
+// Font Face
+@mixin font-face(
+  $name,
+  $path,
+  $weight: null,
+  $style: null,
+  $exts: eot woff2 woff ttf svg
+) {
+  $src: null;
+
+  $extmods: (
+    eot: "?",
+    svg: "#" + str-replace($name, " ", "_"),
+  );
+
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype",
+  );
+
+  @each $ext in $exts {
+    $extmod: if(
+      map-has-key($extmods, $ext),
+      $ext + map-get($extmods, $ext),
+      $ext
+    );
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append(
+      $src,
+      url(quote($path + "." + $extmod)) format(quote($format)),
+      comma
+    );
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+// minxin for background image
+@mixin background-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+// mixin for Placeholder
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content;
+  }
+  :-moz-placeholder {
+    @content;
+  }
+  ::-moz-placeholder {
+    @content;
+  }
+  :-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

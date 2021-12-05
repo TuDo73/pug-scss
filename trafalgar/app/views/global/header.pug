@@ -1,0 +1,24 @@
+//- include ../mixins/all.pug
+
+//- -
+//-   attr = {};
+//-   if (production) {
+//-     attr['data-core-script'] = 'scripts/widgets/widget_header.min.js';
+//-   }
+
+header.header 
+  .container 
+    .header-wrap 
+      a(href="#") 
+        img(data-core-lazy data-src=require('../../assets/images/logo.png') src="", alt="logo")
+      ul.header-nav 
+        li.nav-item 
+          a(href="#") Home
+        li.nav-item 
+          a(href="#") Find a doctor
+        li.nav-item 
+          a(href="#") Apps
+        li.nav-item 
+          a(href="#") Testimonials
+        li.nav-item 
+          a(href="#") About us

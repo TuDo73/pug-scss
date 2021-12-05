@@ -1,0 +1,32 @@
+.download {
+  .download-wrap {
+    position: relative;
+    width: 100%;
+    height: 509px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .download-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url("../images/Rectangle 47.png");
+    @include background-image;
+  }
+
+  .download-content {
+    position: relative;
+    color: $white;
+    h3 {
+      color: $white;
+    }
+
+    p {
+      margin-bottom: 50px;
+    }
+  }
+}

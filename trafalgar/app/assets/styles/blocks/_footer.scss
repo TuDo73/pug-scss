@@ -1,0 +1,31 @@
+.footer {
+  background: $gradient-2;
+
+  .footer-wrap {
+    padding: 118px 0;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a,
+    h4 {
+      color: $white;
+    }
+
+    h4 {
+      padding-bottom: 15px;
+    }
+  }
+
+  .footer-col-left {
+    max-width: 391px;
+  }
+
+  .footer-col-right {
+    display: flex;
+  }
+
+  .footer-col {
+    margin: 0 70px;
+  }
+}

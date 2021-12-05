@@ -1,0 +1,16 @@
+.global-network {
+  .global-img {
+    text-align: center;
+    padding: 100px 0 40px 0;
+  }
+  .network-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .network-item {
+      flex: 1;
+      text-align: center;
+    }
+  }
+}

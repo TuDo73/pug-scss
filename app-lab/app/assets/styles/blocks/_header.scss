@@ -1,0 +1,21 @@
+.header {
+  .header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 0 0 0;
+  }
+
+  .header-col {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-nav {
+    display: flex;
+
+    .nav-item {
+      margin-right: 40px;
+    }
+  }
+}

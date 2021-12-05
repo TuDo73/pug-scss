@@ -1,0 +1,57 @@
+.customers {
+  .customer-slider {
+    display: flex;
+  }
+
+  .customer-item {
+    padding: 30px;
+    border: 1px solid $color-secondary;
+    border-radius: 10px;
+    margin: 0 25px;
+  }
+
+  .customer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h4 {
+      margin-bottom: 3px;
+      font-size: 18px;
+      font-weight: $font-weight-bold;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1;
+    }
+  }
+
+  .customer-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .customer-name {
+    margin-left: 20px;
+  }
+
+  .customer-rate {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-right: 10px;
+      color: $dark-2;
+    }
+  }
+
+  .customer-bottom {
+    color: $dark-2;
+    margin-top: 20px;
+  }
+}
+
+.tns-outer {
+  overflow: hidden;
+  margin: 0 -25px;
+}

@@ -1,0 +1,55 @@
+include ../mixins/all.pug
+
+-
+  attr = {};
+  if (production) {
+    attr['data-core-script'] = 'scripts/widgets/widget_footer.min.js';
+  }
+
+footer.footer&attributes(attr)
+  .container 
+    .footer-wrap 
+      .footer-col-left 
+        .footer-logo 
+          a(href="#") 
+            img(data-core-lazy data-src=require('../../assets/images/logo-white.png') src="", alt="logo")
+        .footer-info 
+          | Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone
+        .footer-copyright
+          | ©Trafalgar PTY LTD 
+          span.copyright 2020
+          | . All rights reserved
+      .footer-col-right
+        .footer-col
+          h4 Company
+          ul.footer-nav 
+            li
+              a(href="#") About 
+            li
+              a(href="#") About 
+            li
+              a(href="#") About 
+            li
+              a(href="#") About 
+        .footer-col
+          h4 Company
+          ul.footer-nav 
+            li
+              a(href="#") About 
+            li
+              a(href="#") About 
+            li
+              a(href="#") About 
+            li
+              a(href="#") About 
+        .footer-col
+          h4 Company
+          ul.footer-nav 
+            li
+              a(href="#") About 
+            li
+              a(href="#") About 
+            li
+              a(href="#") About 
+            li
+              a(href="#") About 

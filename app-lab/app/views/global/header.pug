@@ -1,0 +1,28 @@
+//- include ../mixins/all.pug
+
+
+//- -
+//-   attr = {};
+//-   if (production) {
+//-     attr['data-core-script'] = 'scripts/widgets/widget_header.min.js';
+//-   }
+
+header.header 
+  .container 
+    .header-wrap 
+      .header-logo 
+        a(href="#") 
+          img(data-core-lazy data-src=require('../../assets/images/logo.jpg') src="", alt="logo")
+      .header-col
+        ul.header-nav
+          li.nav-item 
+            a(href="#") Home 
+          li.nav-item 
+            a(href="#") Key Features  
+          li.nav-item 
+            a(href="#") Pricing 
+          li.nav-item 
+            a(href="#") Testiminial 
+          li.nav-item 
+            a(href="#") FAQ 
+        div(class="btn btn-primary") Try for free

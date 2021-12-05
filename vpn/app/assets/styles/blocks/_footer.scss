@@ -1,0 +1,45 @@
+.footer {
+  background: $gray-2;
+
+  .footer-wrap {
+    padding: 180px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-col-with-logo {
+    max-width: 340px;
+
+    .footer-desc {
+      margin: 20px 0;
+    }
+
+    .footer-social {
+      display: flex;
+    }
+
+    .footer-copyright {
+      color: #afb5c0;
+
+      .vpn {
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+
+  .col-wrap {
+    display: flex;
+    padding-top: 10px;
+  }
+
+  .footer-col {
+    &:not(:first-child) {
+      margin-left: 126px;
+    }
+
+    h4 {
+      font-weight: $font-weight-bold;
+      color: $dark-2;
+    }
+  }
+}

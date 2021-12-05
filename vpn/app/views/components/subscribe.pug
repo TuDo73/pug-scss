@@ -1,0 +1,17 @@
+include ../mixins/all.pug
+
+-
+  attr = {};
+  if (production) {
+    attr['data-core-script'] = 'scripts/widgets/widget_subscribe.min.js';
+  }
+
+section.subscribe&attributes(attr)
+  .container 
+    .subscribe-wrap
+      .subscribe-content 
+        .h2-heading-left 
+          h2 Subscribe Now for Get Special Features!
+          p Let's subscribe with us and find the fun.
+      .subscribe-btn 
+        .btn-square Subscribe Now

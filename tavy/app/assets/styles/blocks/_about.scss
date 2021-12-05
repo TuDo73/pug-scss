@@ -1,0 +1,38 @@
+.about {
+  .about-wrap {
+    background: $bg1;
+    padding: 102px 43px;
+    display: flex;
+  }
+
+  .about-img {
+    width: 50%;
+  }
+
+  .about-content {
+    flex: 1;
+    padding-left: 63px;
+
+    @include max-xxl {
+      padding-left: 40px;
+    }
+
+    .about-content-text {
+      font-size: 18px;
+      line-height: 1.66;
+      padding: 25px 0;
+    }
+  }
+
+  .content-bottom {
+    display: flex;
+    align-items: center;
+
+    .bottom-text {
+      margin-left: 31px;
+      p {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

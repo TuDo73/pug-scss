@@ -1,0 +1,32 @@
+//- include ../mixins/all.pug
+
+
+//- -
+//-   attr = {};
+//-   if (production) {
+//-     attr['data-core-script'] = 'scripts/widgets/widget_header.min.js';
+//-   }
+
+header.header 
+  .container 
+    .header-wrap
+      .header-logo
+        img(data-core-lazy data-src=require('../../assets/images/web_logo.png') src="", alt="logo")
+        .logo-text Tavy Stone
+      .header-col-right
+        ul.header-nav
+          li.nav-item.current-item
+            a(href="#") Home
+          li.nav-item
+            a(href="#") Product
+          li.nav-item
+            a(href="#") About us
+          li.nav-item
+            a(href="#") Contact
+        ul.header-contact 
+          li.header-contact-item
+            span.contact-col-left Hotline
+            span.contact-col-right +49 30 1234567
+          li.header-contact-item
+            span.contact-col-left EMAIL
+            span.contact-col-right SERVICE@GMX.DE

@@ -1,0 +1,21 @@
+.header {
+  font-size: 16px;
+
+  .header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 0;
+  }
+
+  .header-nav {
+    display: flex;
+    font-weight: $font-weight-bold;
+
+    .nav-item {
+      &:not(:first-child) {
+        margin-left: 104px;
+      }
+    }
+  }
+}

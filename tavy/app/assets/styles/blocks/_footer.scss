@@ -1,0 +1,33 @@
+.footer {
+  .footer-wrap {
+    padding: 75px 0;
+    position: relative;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      margin: 0;
+
+      &:not(:last-child) {
+        padding-right: 81px;
+      }
+    }
+  }
+}
+
+.back-to-top {
+  position: absolute;
+  width: 99px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bg2;
+  right: -125px;
+  top: -57px;
+  cursor: pointer;
+}

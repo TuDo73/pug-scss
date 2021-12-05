@@ -1,0 +1,22 @@
+.product-details {
+  .section-wrap {
+    background: $bg1;
+  }
+  .details-heading {
+    text-align: center;
+  }
+
+  .product-details-list {
+    --space: 73px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 calc(-1 * (var(--space) / 2));
+    padding: 96px;
+    .list-item {
+      width: calc(100% / 3 - var(--space));
+      margin: calc(var(--space) / 2);
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

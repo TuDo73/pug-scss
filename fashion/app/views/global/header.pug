@@ -1,0 +1,47 @@
+//- include ../mixins/all.pug
+
+
+//- -
+//-   attr = {};
+//-   if (production) {
+//-     attr['data-core-script'] = 'scripts/widgets/widget_header.min.js';
+//-   }
+
+header.header 
+  .header-top 
+    .container 
+      .header-top-wrap
+        .header-top-left 
+          p Phone: +01 256 25 235
+          p Email: info@eiser.com
+        .header-top-right
+          a(href="#") gift card
+          a(href="#") track order
+          a(href="#") language
+  .header-bottom 
+    .container 
+      .header-bottom-wrap
+        .header-logo 
+          img(data-core-lazy data-src=require('../../assets/images/logo.png') src="", alt="logo")
+        ul.header-nav
+          li.nav-item 
+            a(href="#") Home
+          li.nav-item 
+            a(href="#") Blog
+          li.nav-item 
+            a(href="#") Shop
+          li.nav-item 
+            a(href="#") Products
+          li.nav-item 
+            a(href="#") Brands
+          li.nav-item 
+            a(href="#") Contact
+        ul.header-shop
+          li.shop-item 
+            span.icon-search
+          li.shop-item 
+            span.icon-cart
+            span.number 2
+          li.shop-item 
+            span.icon-cart 
+            span.number 3

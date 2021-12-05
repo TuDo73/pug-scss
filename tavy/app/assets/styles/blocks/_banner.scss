@@ -1,0 +1,28 @@
+.banner {
+  .banner-wrap {
+    height: 489px;
+    position: relative;
+  }
+
+  .banner-bg {
+    background: url("../images/banner-page-2.png");
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    @include background-image;
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+      font-weight: $font-weight-regular;
+      text-transform: uppercase;
+    }
+  }
+}

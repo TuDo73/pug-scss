@@ -1,0 +1,28 @@
+include ../mixins/all.pug
+
+-
+  attr = {};
+  if (production) {
+    attr['data-core-script'] = 'scripts/widgets/widget_footer.min.js';
+  }
+
+footer.footer&attributes(attr)
+  .container 
+    .footer-wrap 
+      .footer-logo 
+        img(data-core-lazy data-src=require('../../assets/images/logo-footer.png') src="", alt="logo")
+      ul.footer-nav 
+        li.footer-nav-item 
+          a(href="#") Home
+        li.footer-nav-item 
+          a(href="#") Home
+        li.footer-nav-item 
+          a(href="#") Home
+        li.footer-nav-item 
+          a(href="#") Home
+        li.footer-nav-item 
+          a(href="#") Home
+      .footer-copyright 
+        | Copyright© Arifur Rahman Tushar 
+        span.copyright 2019
+        | . All rights reserved

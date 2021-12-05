@@ -1,0 +1,26 @@
+.intro {
+  .intro-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+
+    &:nth-child(even) {
+      .intro-img {
+        order: 2;
+      }
+    }
+  }
+
+  .intro-content {
+    max-width: 450px;
+
+    p {
+      margin-bottom: 37px;
+    }
+  }
+
+  .intro-button {
+    display: flex;
+  }
+}

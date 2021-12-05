@@ -1,0 +1,68 @@
+include ../mixins/all.pug
+
+-
+  attr = {};
+  if (production) {
+    attr['data-core-script'] = 'scripts/widgets/widget_slider.min.js';
+  }
+
+section.customer&attributes(attr)
+  .container 
+    .customer-wrap 
+      .customer-slider-wrap
+        .customer-controls 
+          span(class="icon-arrow-left")
+          span(class="icon-arrow-right")
+        .customer-slider
+          .customer-item-wrap 
+            .customer-item 
+              div(class="global-heading")
+                h2(class="heading color-white large-spacing") What our customer are saying
+              .box-bottom 
+                .box-user 
+                  .avatar 
+                    img(data-core-lazy data-src=require('../../assets/images/avatar.png') src="", alt="avatar")
+                  .user-info 
+                    .user-name Edward Newgate
+                    .user-detail Founder Circle
+                .box-content
+                  | “Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”
+          .customer-item-wrap 
+            .customer-item 
+              div(class="global-heading")
+                h2(class="heading color-white large-spacing") What our customer are saying
+              .box-bottom 
+                .box-user 
+                  .avatar 
+                    img(data-core-lazy data-src=require('../../assets/images/avatar.png') src="", alt="avatar")
+                  .user-info 
+                    .user-name Edward Newgate
+                    .user-detail Founder Circle
+                .box-content
+                  | “Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”
+          .customer-item-wrap 
+            .customer-item 
+              div(class="global-heading")
+                h2(class="heading color-white large-spacing") What our customer are saying
+              .box-bottom 
+                .box-user 
+                  .avatar 
+                    img(data-core-lazy data-src=require('../../assets/images/avatar.png') src="", alt="avatar")
+                  .user-info 
+                    .user-name Edward Newgate
+                    .user-detail Founder Circle
+                .box-content
+                  | “Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”
+          .customer-item-wrap 
+            .customer-item 
+              div(class="global-heading")
+                h2(class="heading color-white large-spacing") What our customer are saying
+              .box-bottom 
+                .box-user 
+                  .avatar 
+                    img(data-core-lazy data-src=require('../../assets/images/avatar.png') src="", alt="avatar")
+                  .user-info 
+                    .user-name Edward Newgate
+                    .user-detail Founder Circle
+                .box-content
+                  | “Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”

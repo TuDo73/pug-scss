@@ -1,0 +1,16 @@
+include ../mixins/all.pug
+
+-
+  attr = {};
+  if (production) {
+    attr['data-core-script'] = 'scripts/widgets/widget_footer.min.js';
+  }
+
+footer.footer&attributes(attr)
+  .container 
+    .footer-wrap 
+      .footer-content 
+        p @copyright Tavy GmbH
+        p Datenschutz & Impressum
+      .back-to-top  
+        span.icon-arrow-up

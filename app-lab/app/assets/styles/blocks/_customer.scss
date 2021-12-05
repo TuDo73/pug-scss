@@ -1,0 +1,51 @@
+.customer {
+  .customer-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+  }
+
+  .customer-image {
+    flex-shrink: 0;
+  }
+
+  .customer-content {
+    h4 {
+      margin-top: 30px;
+    }
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+
+    .user-info {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+
+      .user-name {
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+
+  .customer-slider-wrap {
+    margin-top: 30px;
+    overflow: hidden;
+  }
+
+  .customer-slider {
+    display: flex;
+  }
+
+  .customer-controls {
+    .control-btn {
+    }
+  }
+  .tns-liveregion {
+    display: none;
+  }
+}

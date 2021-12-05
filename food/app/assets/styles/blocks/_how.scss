@@ -1,0 +1,29 @@
+.how {
+  .how-wrap {
+    padding-top: 72px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80%;
+      height: 3px;
+      background: $gray;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  h2 {
+    text-align: center;
+  }
+
+  .how-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .how-content {
+    max-width: 568px;
+  }
+}

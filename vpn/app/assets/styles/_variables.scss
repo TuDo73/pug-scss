@@ -1,0 +1,189 @@
+/* Path source
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$urlImg: "../images";
+$urlFont: "../fonts";
+
+/* Colors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$color-primary: #4f5665;
+$color-default: $color-primary;
+$color-secondary: #f53838;
+$white: white;
+$dark: black;
+$dark-2: #0b132a;
+$dark-3: #626a87;
+$dark-4: #47639c;
+$purple: #b690f3;
+$purple-2: #5e43d5;
+$purple-3: #a500ad;
+$red: #d11338;
+$red-2: #f88889;
+$red-3: #ef7679;
+$red-4: #ee4040;
+$red-5: #f37272;
+$red-6: #750000;
+$blue: #0064ff;
+$blue-2: #20a8ff;
+$blue-3: #56b3da;
+$blue-4: #167f92;
+$gray: #fbfbfb;
+$gray-2: #f8f8f8;
+$gray-3: #3e3951;
+$gray-4: #8d8d8d;
+$gray-5: rgb(155, 164, 184);
+$gray-6: #f6f6f6;
+$gray-7: #e8eaee;
+$gray-8: #bdc4d2;
+$gray-9: #e2e2e2;
+$gray-10: #f1f3f4;
+$gray-11: #f1f1f1;
+$gray-12: #eaf3f3;
+$gray-13: #d9e4e6;
+$gray-14: #676767;
+$green: #0b9486;
+$green-2: #18d2ba;
+$green-3: #4dbfad;
+$green-4: #55e27d;
+$green-5: #4ab54a;
+$green-6: #80f780;
+$yellow: #f1c433;
+$yellow-2: #ffd966;
+$yellow-3: #ffb303;
+$pink: #e05dc1;
+$organe: #ce7500;
+
+/* Gradient
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$gradient-1: linear-gradient(
+  to bottom,
+  rgba(120, 149, 254, 1) 0%,
+  rgba(176, 191, 254, 1) 100%
+);
+$gradient-2: linear-gradient(
+  to bottom,
+  rgba(103, 150, 237, 1) 0%,
+  rgba(72, 116, 227, 1) 100%
+);
+$gradient-3: linear-gradient(
+  135deg,
+  rgba(106, 222, 203, 1) 0%,
+  rgba(77, 191, 174, 1) 100%
+);
+$gradient-4: linear-gradient(
+  to bottom,
+  rgba(211, 144, 245, 1) 0%,
+  rgba(211, 144, 245, 1) 11%,
+  rgba(191, 113, 230, 1) 100%
+);
+$gradient-5: linear-gradient(
+  45deg,
+  rgba(105, 110, 121, 1) 0%,
+  rgba(43, 48, 59, 1) 100%
+);
+$gradient-6: linear-gradient(
+  to right,
+  rgba(76, 76, 76, 1) 0%,
+  rgba(102, 102, 102, 1) 100%
+);
+$gradient-7: linear-gradient(
+  to right,
+  rgba(241, 231, 103, 1) 0%,
+  rgba(254, 182, 69, 1) 100%
+);
+
+/* Fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$font-roboto: "Roboto", sans-serif;
+$font-icon: "icon";
+$font-primary: $font-roboto;
+$font-title: $font-roboto;
+
+/* Width page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+// Base on design
+$width-page: 1168px;
+// $width-page-xxl: 1232px;
+// $width-page-xl: 896px;
+// $width-page-md: 680px;
+// $width-page-sm: 304px;
+
+/* Breakpoint
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$break-xxl: 1680px;
+$break-xl: 1440px;
+$break-l2: 1280px;
+$break-l1: 1168px;
+$break-md: 1024px;
+$break-m: 992px; // device
+$break-sm: 768px; // mobile
+$break-s: 640px;
+$break-x: 480px;
+$break-xs: 375px;
+
+$layout-breakpoints: (
+  // Base on project
+  xxl: 1680px,
+  xl: 1440px,
+  md: 1024px,
+  sm: 768px,
+  xs: 375px
+) !default;
+
+/* Font-size
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$font-size-1: 14px;
+$font-size-2: 16px;
+$font-size-3: 20px;
+$font-size-default: $font-size-2 !default;
+
+$size-by-breakpoints: (
+  // Base on project
+  xxl: $font-size-3,
+  xl: $font-size-2,
+  md: $font-size-2,
+  sm: $font-size-1,
+  xs: $font-size-1
+) !default;
+
+/* Line-height
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$line-height-1: 1.875; // Text
+$line-height-2: 1.4; // Heading
+$line-height-default: $line-height-1;
+
+/* Font-weight
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 500;
+$font-weight-bold: 700;
+$font-weight-default: $font-weight-regular;
+
+/* Transition
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$cubic1: cubic-bezier(0.19, 1, 0.22, 1);
+$cubic2: cubic-bezier(0.48, 0.48, 0.57, 0.57);
+$cubic3: cubic-bezier(0.215, 0.61, 0.355, 1);
+$cubic4: cubic-bezier(0.4, 0, 0.2, 1);
+
+$transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+$transition-secondary: all 0.3s ease;
+
+// Border-radius
+$border-radius-primary: 5px;
+
+// Border
+$line-primary: 1px solid $gray;
+
+// Height
+$height-form-element: 36px;
+$height-button: 41px;
+$height-button-2: 31px;
+
+// Box-shadow
+$box-shadow-primary: 2px 2px 2px #b0b0b0;
+$box-shadow-secondary: 2px 2px 4px #b9b9b9;
+
+/* Button
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$button-height: 46px;

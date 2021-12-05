@@ -1,0 +1,17 @@
+.subscribe {
+  // transform: translateY(125px);
+  // height: 300px;
+  .subscribe-wrap {
+    background: $white;
+    display: flex;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 58px 70px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .subscribe-content {
+    max-width: 410px;
+  }
+}

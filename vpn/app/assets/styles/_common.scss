@@ -1,0 +1,206 @@
+:root {
+  --pj-body: #{$font-size-default};
+  --pj-hero-text: #{1.5 * $font-size-default};
+  --pj-h2: #{1.75 * $font-size-default};
+  --pj-h1: #{2.5 * $font-size-default};
+  --pj-h4: #{1.125 * $font-size-default};
+  --pj-social-handle: #{0.75 * $font-size-default};
+  --pj-small-text: #{0.625 * $font-size-default};
+}
+// @each $breakpoint, $size in $size-by-breakpoints {
+//   @include media-breakpoint-down($breakpoint, $layout-breakpoints) {
+//     :root {
+//       @include make-font-size-define($size);
+//     }
+//   }
+// }
+
+* {
+  outline: none !important;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  font-weight: $font-weight-default;
+  font-family: $font-primary;
+  line-height: $line-height-default;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $color-default;
+
+  @include font-size(var(--#{$variable-prefix}body));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-2;
+  // font-size: 35px;
+  letter-spacing: 0;
+  color: $dark-2;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: $font-weight-bold;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: $font-weight-bold;
+}
+
+h3 {
+  // font-size: 21px;
+  font-weight: $font-weight-bold;
+}
+
+h4 {
+  // font-size: 18px;
+  font-weight: $font-weight-semi-bold;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+
+  //remove blank space under image
+  vertical-align: middle;
+
+  // check image dont have alt
+  &:not([alt]),
+  &[alt=""] {
+    border: 5px solid red;
+  }
+}
+
+p {
+  // font-weight: $font-weight-regular;
+  margin-block-start: 0;
+  margin-block-end: 15px;
+
+  &:last-child {
+    margin-block-end: 0;
+  }
+}
+
+a {
+  // cursor: pointer;
+  // text-decoration: none;
+  // color: $blue;
+  @extend %link;
+
+  &:hover {
+    @extend %link-hover;
+  }
+}
+
+input {
+  width: 100%;
+  border: 1px solid $gray;
+  display: flex;
+  padding: 8px 13px;
+  display: flex;
+  align-items: center;
+  background: white;
+  position: relative;
+  border-radius: 0;
+  font-family: $font-primary;
+  font-size: $font-size-default;
+}
+
+input:disabled {
+  background: $gray-9;
+}
+
+::-webkit-input-placeholder {
+  color: $gray;
+  opacity: 0.7;
+}
+
+::-moz-placeholder {
+  color: $gray;
+  opacity: 0.7;
+}
+
+:-ms-input-placeholder {
+  color: $gray;
+  opacity: 0.7;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: $gray;
+}
+
+// .body-wrapper {
+//   overflow: hidden;
+// }
+
+.btn-square {
+  width: 250px;
+  height: 60px;
+  background: $color-secondary;
+  color: $white;
+  cursor: pointer;
+  font-weight: $font-weight-bold;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-ellipse {
+  border: 2px solid $color-secondary;
+  color: $color-secondary;
+  border-radius: 999px;
+  padding: 13px 63px;
+  font-weight: $font-weight-bold;
+  cursor: pointer;
+  line-height: 1;
+  transition: all 0.3s;
+
+  &:hover {
+    color: $white;
+    background: $color-secondary;
+  }
+}
+
+.h2-heading {
+  padding-top: 85px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.h2-heading-left {
+}
+
+.section-bg {
+  background: $gray;
+}

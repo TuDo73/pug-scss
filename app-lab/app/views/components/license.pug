@@ -1,0 +1,81 @@
+include ../mixins/all.pug
+
+-
+  attr = {};
+  if (production) {
+    attr['data-core-script'] = 'scripts/widgets/widget_tab.min.js';
+  }
+
+section.license&attributes(attr) 
+  .container 
+    .license-wrap
+      .license-heading 
+        h3 Get awesome features, without extra charges
+        p The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.
+      .license-tab-block 
+        .license-tab-bar
+          .license-buttons 
+            div(class="license-btn active" data-tab=1) Monthly
+            div(class="license-btn" data-tab=2)  Annually
+        div(class="license-tab-content active" data-tab=1) 
+          div(class="tab-content-item")
+            .tab-item-top 
+              .item-price
+                span.price $0
+                span  / month
+              h4.item-title Business Class
+              p For small teams or office
+            .tab-item-bottom 
+              ul.text-list 
+                li Drag & Drop Builder
+                li Drag & Drop Builder
+                li Drag & Drop Builder
+                li Drag & Drop Builder
+              .btn Start free trail
+          div(class="tab-content-item pay-item")
+            .tab-item-top 
+              .item-price
+                span.price $99
+                span  / month
+              h4.item-title Business Class
+              p For small teams or office
+            .tab-item-bottom 
+              ul.text-list 
+                li Drag & Drop Builder
+                li Drag & Drop Builder
+                li Drag & Drop Builder
+                li Drag & Drop Builder
+              .text-links
+                .btn Start free trail
+                a(href="#") Or start 14 days trail
+        div(class="license-tab-content" data-tab=2) 
+          div(class="tab-content-item")
+            .tab-item-top 
+              .item-price
+                span.price $0
+                span  / year
+              h4.item-title Business Class
+              p For small teams or office
+            .tab-item-bottom 
+              ul.text-list 
+                li Drag & Drop Builder
+                li Drag & Drop Builder
+                li Drag & Drop Builder
+                li Drag & Drop Builder
+              .btn Start free trail
+          div(class="tab-content-item pay-item")
+            .tab-item-top 
+              .item-price
+                span.price $99
+                span  / year
+              h4.item-title Business Class
+              p For small teams or office
+            .tab-item-bottom 
+              ul.text-list 
+                li Drag & Drop Builder
+                li Drag & Drop Builder
+                li Drag & Drop Builder
+                li Drag & Drop Builder
+              .text-links
+                .btn Start free trail
+                a(href="#") Or start 14 days trail

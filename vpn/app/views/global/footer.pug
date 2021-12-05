@@ -1,0 +1,66 @@
+include ../mixins/all.pug
+
+-
+  attr = {};
+  if (production) {
+    attr['data-core-script'] = 'scripts/widgets/widget_footer.min.js';
+  }
+
+footer.footer&attributes(attr)
+  .container 
+    .footer-wrap 
+      div(class="footer-col-with-logo") 
+        .footer-logo 
+          img(data-core-lazy, data-src=require('../../assets/images/Logo.png'), src="", alt="logo")
+        .footer-desc 
+          p 
+            span LaslesVPN
+            |  is a private virtual network that has unique features and has high security.
+        ul.footer-social 
+          li.social-item 
+            img(data-core-lazy, data-src=require('../../assets/images/Facebook.png'), src="" alt="logo")
+          li.social-item 
+            img(data-core-lazy, data-src=require('../../assets/images/Facebook.png'), src="" alt="logo")
+          li.social-item 
+            img(data-core-lazy, data-src=require('../../assets/images/Facebook.png'), src="" alt="logo")
+        .footer-copyright 
+          | ©
+          span.copyright 2020
+          | Lasles
+          span.vpn VPN
+      .col-wrap
+        .footer-col 
+          h4 Earn
+          ul.footer-list 
+            li.footer-list-item 
+              a(href="#") Download
+            li.footer-list-item 
+              a(href="#") FAQ
+            li.footer-list-item 
+              a(href="#") Download
+            li.footer-list-item 
+              a(href="#") Download
+            li.footer-list-item 
+              a(href="#") Terms of Service
+        .footer-col 
+          h4 Product
+          ul.footer-list 
+            li.footer-list-item 
+              a(href="#") Terms of Service
+            li.footer-list-item 
+              a(href="#") Download
+            li.footer-list-item 
+              a(href="#") FAQ
+            li.footer-list-item 
+              a(href="#") Download
+            li.footer-list-item 
+              a(href="#") Download
+        .footer-col 
+          h4 Earn Money
+          ul.footer-list 
+            li.footer-list-item 
+              a(href="#") Terms of Service
+            li.footer-list-item 
+              a(href="#") Download
+            li.footer-list-item 
+              a(href="#") Terms of Service

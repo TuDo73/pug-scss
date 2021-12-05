@@ -1,0 +1,17 @@
+.code {
+  padding-bottom: 40px;
+  border-bottom: 1px solid $gray-line;
+  .code-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .code-content {
+    max-width: 403px;
+
+    p {
+      margin-bottom: 35px;
+    }
+  }
+}

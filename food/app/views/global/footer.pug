@@ -1,0 +1,26 @@
+include ../mixins/all.pug
+
+-
+  attr = {};
+  if (production) {
+    attr['data-core-script'] = 'scripts/widgets/widget_footer.min.js';
+  }
+
+footer.footer&attributes(attr)
+  .container 
+    .footer-wrap 
+      img(data-core-lazy data-src=require('../../assets/images/Bella Olonje logo 111 1.png')  src="", alt="logo")
+      ul.footer-social
+        li 
+          a(href="#") 
+            img(data-core-lazy data-src=require('../../assets/images/instagram.svg') src="", alt="social")
+        li 
+          a(href="#") 
+            img(data-core-lazy data-src=require('../../assets/images/Vector.svg') src="", alt="social")
+        li 
+          a(href="#") 
+            img(data-core-lazy data-src=require('../../assets/images/Vector1.svg') src="", alt="social")
+      .footer-copyright 
+        | Copywright 
+        span.copyright 2020 
+        |  Bella Onojie.com

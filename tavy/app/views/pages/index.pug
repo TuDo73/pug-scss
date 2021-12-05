@@ -1,0 +1,23 @@
+extends ../layouts/layout
+
+block vars
+  - title = "Page Listing";
+  - keyword = "";
+  - description = "";
+
+block container
+  .container
+    h3 Page listing
+    -
+      var pages = [
+        { src: 'home', name: 'Home'},
+        { src: 'product-details', name: 'Product Details'},
+      ];
+
+    ul
+      each page, index in pages
+        li: a(href=page.src + '.html', title=page.name, style="font-size: 16px; color: black;")
+          | #{index + 1}.
+          if page.parent
+            | [#{page.parent}] -
+          | #{page.name}

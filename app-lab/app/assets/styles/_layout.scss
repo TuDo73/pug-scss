@@ -1,0 +1,28 @@
+%container {
+  width: 100%;
+  max-width: $width-page + ($gutter * 2);
+  margin: 0 auto;
+  padding: 0 $gutter;
+
+  // @include max-xxl {
+  //   max-width: $width-page-xxl + ($gutter * 2);
+  // }
+  // @include max-xl {
+  //   max-width: $width-page-xl + ($gutter * 2);
+  // }
+  // @include max-md {
+  //   max-width: $width-page-md + ($gutter * 2);
+  // }
+  // @include max-sm {
+  //   max-width: $width-page-sm + ($gutter * 2);
+  // }
+}
+
+.container {
+  @extend %container;
+}
+
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+}
